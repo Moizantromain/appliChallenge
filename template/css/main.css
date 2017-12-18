@@ -1,2 +1,33 @@
 body {
-  background: white; }
+  background: #F7F1F0;
+  font-family: 'Arial', sans serif; }
+
+#Container {
+  width: 100vw;
+  height: 85vh; }
+
+#Daily td {
+  padding-top: 20vh; }
+
+#Weekly td, #Monthly td {
+  padding-top: 10vh; }
+
+button {
+  width: 8vh;
+  height: 8vh;
+  border-radius: 5%;
+  background-color: #B6B0AF;
+  font-size: 30px;
+  font-weight: 200; }
+
+#Footer {
+  width: 100vw;
+  height: 15vh;
+  background-color: #B6B0AF; }
+
+#Footer td:first-child {
+  padding-top: 3vh;
+  padding-left: 5vh; }
+
+#Footer button {
+  background-color: #8A8685; }

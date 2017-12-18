@@ -10,32 +10,56 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
         
     </head>
     <body>
-        
+
+    <!-- Container avec les images des sites selectionnés -->   
         <section id="Container" class="container">
             <table>
                 <tr id="Daily" class="daily">
-                    <td></td>
+                    <td>
+                        <p>Daily</p>
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                        <button><a href="">+</a></button>
+                    </td>
                 </tr>
                 <tr id="Weekly" class="weekly">
-                    <td></td>
+                    <td>
+                        <p>Weekly</p>
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                        <button><a href="">+</a></button>
+                    </td>
                 </tr>
                 <tr id="Monthly" class="monthly">
-                    <td></td>
+                    <td>
+                        <p>Monthly</p>
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                        <button><a href="">+</a></button>
+                    </td>
                 </tr>
             </table>
         </section>
+    <!-- Section du bas avec la quatrième liste de sites selectionnés-->
         <section id="Footer" class="footer">
             <table>
                 <tr id="Bottom" class="bottom">
-                    <td><a href=""></a></td>
+                    <td>
+                        <button><a href="">+</a></button></td>
                 </tr>
             </table>
         </section>
@@ -47,7 +71,6 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
