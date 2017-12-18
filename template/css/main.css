@@ -1,3 +1,6 @@
+body {
+  background: #F7F1F0;
+  font-family: 'Arial', sans serif; }
 
 .site {
   width: 47vh;
@@ -69,10 +72,6 @@ h2 {
 
 .A3 {
   color: black; }
-
-body{
-  background: #F7F1F0;
-  font-family: 'Arial', sans serif; }
 
 #Container {
   width: 100vw;
