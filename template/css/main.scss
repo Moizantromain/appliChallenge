@@ -11,6 +11,81 @@ body{
 	background: $color-white;
 	font-family: 'Arial', sans serif;
 }
+.site{
+	width: 47vh;
+	height: 318px;
+	border: 2px solid black;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+h2{
+	margin-left: 17px;
+}
+.site2{
+	background-color: grey;
+	width: 100%;
+	height: 86%;
+}
+.siteImg{
+	margin: 0 auto;
+	width: 30%;
+	height: 28%;
+	border: 2px solid black;
+	background: white;
+			
+}
+.btn{
+	width: 36%;
+	height: 30%;
+	position: absolute;
+	top: 48px;
+	left: 177px;
+}
+.A1 {
+	padding: 1px 2px;
+	margin-left: 11px;
+	border: 2px solid black;
+	border-radius: 3px;
+	box-shadow: 2px 2px 0 black;
+	font-size: 10px;
+	color: black;
+}
+.A2{
+	display: block;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 0px 7px;
+	border: 2px solid black;
+	border-radius: 3px;
+	box-shadow: 2px 2px 0 black;
+	font-size: 10px;
+	color: black;
+}
+.input{
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	top: 169px;
+	input:first-child{
+		margin-left: 58px;
+	}
+	input:last-child{
+		display: block;
+		margin-top: 17px;
+		margin-left: 58px;
+	}
+}
+.subA3{
+	position: absolute;
+	top: 257px;
+	left: 78px;
+	border: 2px solid black;
+}
+.A3{
+	color:black;
+}
+
 #Container{
 	width: 100vw;
 	height: 85vh;
@@ -41,3 +116,4 @@ button{
 #Footer button{
 	background-color: $color-dark-grey;	
 }
+
