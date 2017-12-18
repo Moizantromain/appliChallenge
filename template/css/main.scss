@@ -1,3 +1,10 @@
+$color-white : white;
+$color-navy : navy;
+$color-red : red;
+$color-black : black;
+$color-green : green;
+$color-gradient : url image;
+
 body{
-    background: red;
+	background: $color-white;
 }
