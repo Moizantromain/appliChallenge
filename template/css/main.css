@@ -32,7 +32,9 @@ body {
   border: 2px solid black;
   position: absolute;
   top: 1px;
-  left: 1px; }
+  left: 1px;
+  display: none;
+  z-index: 2; }
 
 h2 {
   margin-left: 17px; }
@@ -101,7 +103,9 @@ h2 {
 
 #Container {
   width: 100vw;
-  height: 85vh; }
+  height: 85vh;
+  position: relative;
+  z-index: 1; }
 
 #Daily td {
   padding-top: 20vh; }
@@ -128,3 +132,47 @@ button {
 
 #Footer button {
   background-color: #8A8685; }
+
+/*-------MENU---------*/
+.menuThemes {
+  display: none; }
+
+.menuThemes.show {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  width: 230px;
+  height: 350px;
+  border-radius: 5px;
+  background-color: #F7F1F0;
+  color: grey;
+  text-align: center;
+  display: block; }
+
+.menuThemes ul {
+  padding: 0;
+  margin: 2px;
+  line-height: 40px; }
+
+.menuThemes ul li {
+  list-style-type: none;
+  background-color: #F4F3F4; }
+
+.menuThemes ul li:nth-of-type(odd) {
+  background-color: white; }
+
+.imgBudda {
+  position: absolute;
+  left: 2vw;
+  top: 40vh;
+  width: 55px;
+  cursor: pointer; }
+
+.imgBuddaTop {
+  position: absolute;
+  left: 7.5vw;
+  top: 2vh;
+  width: 55px;
+  cursor: pointer; }
+
+/*-------------------------------*/
