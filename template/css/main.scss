@@ -6,6 +6,38 @@ $color-green : #1E8F18;
 $color-gradient : url image;
 $color-light-grey: #B6B0AF;
 $color-dark-grey: #8A8685;
+$color-texte-white: #8A8685;
+$color-texte-navy: #04176F;
+$color-texte-red: #5D1F0A;
+$color-texte-black: #EBECF9;
+$color-texte-green: #094606;
+$color-texte-gradient: grey;
+
+.white{
+	background-color: $color-white;
+	color: $color-texte-white;
+}
+.navy{
+	background-color: $color-navy;
+	color: $color-texte-navy;
+}
+.red{
+	background-color: $color-red;
+	color: $color-texte-red;
+}
+.black{
+	background-color: $color-black;
+	color: $color-texte-black;
+}
+.green{
+	background-color: $color-green;
+	color: $color-texte-green;
+}
+.gradient{
+	background-color: url;
+	color: grey;
+}
+
 
 body{
 	background: $color-white;
