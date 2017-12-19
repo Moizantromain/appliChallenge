@@ -1,3 +1,27 @@
+.white {
+  background-color: #F7F1F0;
+  color: #8A8685; }
+
+.navy {
+  background-color: #4247AF;
+  color: #04176F; }
+
+.red {
+  background-color: #922C16;
+  color: #5D1F0A; }
+
+.black {
+  background-color: #4D4E55;
+  color: #EBECF9; }
+
+.green {
+  background-color: #1E8F18;
+  color: #094606; }
+
+.gradient {
+  background-color: url;
+  color: grey; }
+
 body {
   background: #F7F1F0;
   font-family: 'Arial', sans serif; }
