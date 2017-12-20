@@ -22,9 +22,24 @@
   background-color: url;
   color: grey; }
 
+.block {
+  width: 8vh;
+  height: 8vh;
+  border-radius: 5%;
+  background-color: pink;
+  font-size: 30px;
+  font-weight: 200;
+  display: inline-block;
+  margin-right: 1vw;
+  margin-top: 3vh;
+  padding-bottom: 0; }
+
 body {
   background: #F7F1F0;
   font-family: 'Arial', sans serif; }
+
+ul {
+  list-style-type: none; }
 
 .site {
   width: 18vw;
@@ -106,12 +121,14 @@ h2 {
   height: 85vh;
   position: relative;
   z-index: 1; }
+  #Container div {
+    display: inline-block;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 5%; }
 
-#Daily td {
+#Table {
   padding-top: 20vh; }
-
-#Weekly td, #Monthly td {
-  padding-top: 10vh; }
 
 button {
   width: 8vh;
@@ -125,8 +142,10 @@ button {
   width: 100vw;
   height: 15vh;
   background-color: #B6B0AF; }
+  #Footer div {
+    display: inline-block; }
 
-#Footer td:first-child {
+#Footer div:first-child {
   padding-top: 3vh;
   padding-left: 5vh; }
 
