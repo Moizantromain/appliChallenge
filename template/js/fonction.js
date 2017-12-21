@@ -10,24 +10,32 @@ $(document).ready(function(){
     $('.site').css('display','block');
     dailyOk = 1;
     decaleContainer();
+    $('#Logo').attr('src', 'img/budda.png');
+    $('.multimg').remove();
   })
     $('#Btn-Weekly').on('click',function(event){
     event.preventDefault();
     $('.site').css('display','block');
     weeklyOk = 1;
     decaleContainer();
+    $('#Logo').attr('src', 'img/budda.png');
+    $('.multimg').remove();
   })
     $('#Btn-Monthly').on('click',function(event){
     event.preventDefault();
     $('.site').css('display','block');
     monthlyOk = 1;
     decaleContainer();
+    $('#Logo').attr('src', 'img/budda.png');
+    $('.multimg').remove();
   })
     $('#Btn-All').on('click',function(event){
     event.preventDefault();
     $('.site').css('display','block');
     allOk = 1;
     decaleContainer();
+    $('#Logo').attr('src', 'img/budda.png');
+    $('.multimg').remove();
   })
   //------------------------------------------------------
   //------------------------------------------------------
@@ -71,50 +79,59 @@ $(document).ready(function(){
   });
   //------------------------------------------------------
   //------------------------------------------------------
-    
+  
   $('.A3').on('click',function(event){
+    var time = $.now();
     A3Ok = 1;
     event.preventDefault();
-    var time = $.now();
     if (dailyOk == 1 && A3Ok == 1){
-       
-      $('#Daily div:last-child').before($('<div>').addClass('block'));
-      $('div.block').append('<img id="page-'+time+'">');
-        var id = $('#page-' + time);
-        id.attr('src', $('#Logo').attr('src')); 
-
-      
-
+      $('#Daily div:last-child').before($('<div>').addClass('blockD'+ time));
+      $('div.blockD'+time).append('<img id="page-'+time+'">');
+      var id = $('#page-' + time);
+      id.attr('src', $('#Logo').attr('src')); 
       $('.site').hide();
       reviensContainer();
       dailyOk = 0;
+      
     }
   })  
   $('.A3').on('click',function(event){
+    var time = $.now();
     A3Ok = 1;
     event.preventDefault();
     if (weeklyOk == 1 && A3Ok == 1){
-      $('#Weekly div:last-child').before($('<div>').addClass('block').append('<img><p>'));
+      $('#Weekly div:last-child').before($('<div>').addClass('blockW' + time));
+      $('div.blockW' + time).append('<img id="page-' + time + '">');
+      var id = $('#page-' + time);
+      id.attr('src', $('#Logo').attr('src'));
       $('.site').hide();
       reviensContainer();
       weeklyOk = 0;
     }
   })
   $('.A3').on('click',function(event){
+    var time = $.now();
     A3Ok = 1;
     event.preventDefault();
     if (monthlyOk == 1 && A3Ok == 1){
-      $('#Monthly div:last-child').before($('<div>').addClass('block').append('<img><p>'));
+      $('#Monthly div:last-child').before($('<div>').addClass('blockM' + time));
+      $('div.blockM' + time).append('<img id="page-' + time + '">');
+      var id = $('#page-' + time);
+      id.attr('src', $('#Logo').attr('src'));
       $('.site').hide();
       reviensContainer();
       monthlyOk = 0;
     }
   })
   $('.A3').on('click',function(event){
+    var time = $.now();
     A3Ok = 1;
     event.preventDefault();
     if (allOk == 1 && A3Ok == 1){
-      $('#Bottom div:last-child').before($('<div>').addClass('block').append('<img><p>'));
+      $('#Bottom div:last-child').before($('<div>').addClass('blockA' + time));
+      $('div.blockA' + time).append('<img id="page-' + time + '">');
+      var id = $('#page-' + time);
+      id.attr('src', $('#Logo').attr('src'));
       $('.site').hide();
       reviensContainer();
       allOk = 0;
