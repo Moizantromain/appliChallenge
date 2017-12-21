@@ -58,6 +58,23 @@ body{
 ul{
 	list-style-type: none;
 }
+  #More {
+  	width: 500px;
+  	border: 2px solid black;
+  	box-sizing: border-box;
+  	position: absolute;
+  	top: -51px;
+  	left: 123px;
+  }
+
+  #Imgli {
+  	width: 500px;
+  	display: flex;
+  	flex-wrap: wrap;
+  	overflow: hidden;
+  	list-style-type: none;
+  	padding: 0;
+  }
 .site{
 	width: 18vw;
 	height: 318px;
