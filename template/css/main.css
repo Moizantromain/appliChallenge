@@ -101,13 +101,17 @@ h2 {
 .A3 {
   color: black; }
 
-#Container {
+.container {
   width: 100vw;
   height: 85vh;
   position: relative;
-  left: 9vw;
-  z-index: 1; }
-
+  left: 0;
+  transition-duration: 0.5s; 
+}
+/*Animation du container*/
+.container.show {
+  left: 10vw;
+}
 #Daily td {
   padding-top: 20vh; }
 
@@ -141,32 +145,39 @@ button {
   top: 40vh;
   width: 55px;
   cursor: pointer;
+  transition-duration: 0.5s;
 }
 .imgBuddaTop {
   position: absolute;
-  left: 120px;
+  left: 110px;
   top: 2vh;
   width: 55px;
   cursor: pointer;
-  display: none; 
+  /* display: none;  */
 }
 .listHead li{
-  vertical-align: center;
   padding: 8px 0;
 }
 .listHead li p{
   display: inline-block;
   margin: 0;
+  padding: 0 50px;
+  transition-duration: 0.5s;
 }
-.themes i{
-  margin: 0 25px;
-}
-.facebook i, .import i, .notifications i, .notifications i, .share i{
+
+.themes i, .facebook i, .import i, .notifications i, .notifications i, .share i{
   visibility: hidden;
-  margin: 0 25px;
+  margin: 0 ;
+  transition-delay: 0.1s;
+  transition-duration: 0.5s;
 }
-.facebook:hover i, .import:hover i,.notifications:hover i, .share:hover i{
+.themes:hover i, .themes:hover p, 
+.facebook:hover i, .facebook:hover p, 
+.import:hover i, .import:hover p, 
+.notifications:hover i, .notifications:hover p, 
+.share:hover i, .share:hover p{
   visibility: visible;
+  padding: 0 10px;
 } 
 .menuThemes{
   position: absolute;
@@ -176,7 +187,7 @@ button {
   background-color: #F7F1F0;
   color: grey;
   text-align: center;
-  transition-duration: 0.1s; 
+  transition-duration: 0.4s; 
 }
 .menuThemes ul {
   padding: 5px 0 0 2px;
@@ -363,10 +374,4 @@ button {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* 
-.leftmenu{
-  height: 100vh;
-  width: 300px;
-  background-color: #1E8F18;
-} */
 /*-------------------------------*/

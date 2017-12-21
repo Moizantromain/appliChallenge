@@ -21,41 +21,42 @@ $(document).ready(function(){
     decaleContainer();
   })
 
-  function decaleContainer(){
-  $('#Container').animate({
-    'left': '+=93',
-    'top': '+=50',
-  }, 200, 'linear')
-  } 
-  function decaleContainerLeft(){
-    $('#Container').animate({
-      'left': '+=93',
-    }, 200, 'linear')
-    }
-  function containerOrigin(){
-        $('#Container').animate({
-          'left': '-=93',
-         }, 200, 'linear')
-  }   
+  // function decaleContainer(){
+  // $('#Container').animate({
+  //   'left': '+=93',
+  //   'top': '+=50',
+  // }, 200, 'linear')
+  // } 
+  // function decaleContainerLeft(){
+  //   $('#Container').animate({
+  //     'left': '+=93',
+  //   }, 200, 'linear')
+  //   }
+  // function containerOrigin(){
+  //       $('#Container').animate({
+  //         'left': '-=93',
+  //        }, 200, 'linear')
+  // }   
   $('#Buddabtn').on('click', function(){
         $('.menuThemes').toggleClass('show');
-        $('.imgBuddaTop').show();
-        $('.imgBudda').hide();
+        // $('.imgBuddaTop').show();
+        $('.imgBudda').toggleClass('imgBuddaTop');
+        $('.container').toggleClass('show');
         $('.themes i').toggleClass('arrowOK');
-        decaleContainerLeft();
+        // decaleContainerLeft();
    });
-  $('#BuddabtnTop').on('click', function(){
-        $('.menuThemes').toggleClass('show');
-        $('.imgBuddaTop').hide();
-        $('.imgBudda').show();
-        containerOrigin();
-    });
+  // $('#BuddabtnTop').on('click', function(){
+  //       $('.menuThemes').toggleClass('show');
+  //       $('.imgBuddaTop').hide();
+  //       $('.imgBudda').show();
+  //       containerOrigin();
+  //   });
     
   $('.themes').on('click', function(){
-    $('.themes').toggleClass('show');
-    $('.themes i').toggleClass('fa-rotate-180');
-    $('.facebook, .import, .notifications, .share').slideToggle(500);
+    // $('.themes').toggleClass('show');
+    $('.themes i').toggleClass('fa-rotate-180 iOuvert');
     $('.choixTheme').slideToggle(500);
+    $('.facebook, .import, .notifications, .share').slideToggle(500);
   });
   $('.facebook').on('click', function(){
     $('.facebook i').toggleClass('fa-rotate-180');
