@@ -98,8 +98,7 @@ h2{
 	width: 30%;
 	height: 28%;
 	border: 2px solid black;
-	background: white;
-			
+	background: white;		
 }
 .btn{
 	width: 36%;
@@ -163,10 +162,27 @@ h2{
 		width: 8vh;
 		height: 8vh;
 		border-radius: 5%;
+		vertical-align: bottom;
+    	margin-top: 3vh;
+    	margin-right: 2vw;
 	}
 }
 #Table{
 	padding-top: 20vh;
+	i{
+		visibility: hidden;
+	}
+	p{
+		margin-top: 2vh;
+	}
+}
+#Daily div:first-child:hover, #Weekly div:first-child:hover, #Monthly div:first-child:hover{
+	i{
+		visibility: visible;
+	}
+	p{
+		margin-top: 0;
+	}
 }
 
 button{
@@ -176,6 +192,7 @@ button{
 	background-color: #B6B0AF;
 	font-size: 30px;
 	font-weight: 200; 
+	vertical-align: bottom;
 }
 #Footer{
 	width: 100vw;	
@@ -183,11 +200,17 @@ button{
 	background-color: $color-light-grey;
 	div{
 		display: inline-block;
+	    vertical-align: bottom;
+    	margin-top: 3vh;
 	}
 }
-#Footer div:first-child{
-	padding-top: 3vh;
-	padding-left: 5vh;
+div.btn-i i{
+	display: none;
+}
+div.btn-footer:hover{
+	i{
+		display: block;
+	}
 }
 #Footer button{
 	background-color: $color-dark-grey;	
