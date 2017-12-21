@@ -5,72 +5,72 @@ $(document).ready(function(){
   var allOk
 
 
-  $('#Btn-Daily').click(function(event){
+  $('#Btn-Daily').on('click',function(event){
     event.preventDefault();
     $('.site').css('display','block');
     dailyOk = 1;
     decaleContainer();
   })
-    $('#Btn-Weekly').click(function(event){
+    $('#Btn-Weekly').on('click',function(event){
     event.preventDefault();
     $('.site').css('display','block');
     weeklyOk = 1;
     decaleContainer();
   })
-    $('#Btn-Monthly').click(function(event){
+    $('#Btn-Monthly').on('click',function(event){
     event.preventDefault();
     $('.site').css('display','block');
     monthlyOk = 1;
     decaleContainer();
   })
-    $('#Btn-All').click(function(event){
+    $('#Btn-All').on('click',function(event){
     event.preventDefault();
     $('.site').css('display','block');
     allOk = 1;
     decaleContainer();
   })
     
-  $('.A3').click(function(event){
+  $('.A3').on('click',function(event){
     A3Ok = 1;
     event.preventDefault();
     if (dailyOk == 1 && A3Ok == 1){
-      $('#Daily div:last-child').before($('<div>').addClass('block'));
+      $('#Daily div:last-child').before($('<div>').addClass('block').append('<img><p>'));
       $('.site').hide();
       reviensContainer();
       dailyOk = 0;
     }
   })  
-  $('.A3').click(function(event){
+  $('.A3').on('click',function(event){
     A3Ok = 1;
     event.preventDefault();
     if (weeklyOk == 1 && A3Ok == 1){
-      $('#Weekly div:last-child').before($('<div>').addClass('block'));
+      $('#Weekly div:last-child').before($('<div>').addClass('block').append('<img><p>'));
       $('.site').hide();
       reviensContainer();
       weeklyOk = 0;
     }
   })
-  $('.A3').click(function(event){
+  $('.A3').on('click',function(event){
     A3Ok = 1;
     event.preventDefault();
     if (monthlyOk == 1 && A3Ok == 1){
-      $('#Monthly div:last-child').before($('<div>').addClass('block'));
+      $('#Monthly div:last-child').before($('<div>').addClass('block').append('<img><p>'));
       $('.site').hide();
       reviensContainer();
       monthlyOk = 0;
     }
   })
-  $('.A3').click(function(event){
+  $('.A3').on('click',function(event){
     A3Ok = 1;
     event.preventDefault();
     if (allOk == 1 && A3Ok == 1){
-      $('#Bottom div:last-child').before($('<div>').addClass('block'));
+      $('#Bottom div:last-child').before($('<div>').addClass('block').append('<img><p>'));
       $('.site').hide();
       reviensContainer();
       allOk = 0;
     }
   })
-
+ 
   function decaleContainer(){
     $('#Container').animate({
       'left': '+=93',
@@ -93,11 +93,13 @@ $(document).ready(function(){
            $('<li>').text('Notifications'),
            $('<li>').text('Share'),
        );
-   $('#Buddabtn').click(function(){
+   $('#Buddabtn').on('click',function(){
           $('#Buddabtn').toggleClass('imgBuddaTop');
           $('.menuThemes').toggleClass('show');
           decaleContainer();
    });
+
+
 
 
 })

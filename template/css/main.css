@@ -125,10 +125,23 @@ h2 {
     display: inline-block;
     width: 8vh;
     height: 8vh;
-    border-radius: 5%; }
+    border-radius: 5%;
+    vertical-align: bottom;
+    margin-top: 3vh;
+    margin-right: 2vw; }
 
 #Table {
   padding-top: 20vh; }
+  #Table i {
+    visibility: hidden; }
+  #Table p {
+    margin-top: 2vh; }
+
+#Daily div:first-child:hover i, #Weekly div:first-child:hover i, #Monthly div:first-child:hover i {
+  visibility: visible; }
+
+#Daily div:first-child:hover p, #Weekly div:first-child:hover p, #Monthly div:first-child:hover p {
+  margin-top: 0; }
 
 button {
   width: 8vh;
@@ -136,18 +149,23 @@ button {
   border-radius: 5%;
   background-color: #B6B0AF;
   font-size: 30px;
-  font-weight: 200; }
+  font-weight: 200;
+  vertical-align: bottom; }
 
 #Footer {
   width: 100vw;
   height: 15vh;
   background-color: #B6B0AF; }
   #Footer div {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 3vh; }
 
-#Footer div:first-child {
-  padding-top: 3vh;
-  padding-left: 5vh; }
+div.btn-i i {
+  display: none; }
+
+div.btn-footer:hover i {
+  display: block; }
 
 #Footer button {
   background-color: #8A8685; }
