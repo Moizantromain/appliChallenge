@@ -135,61 +135,97 @@ button {
   background-color: #8A8685; }
 
 /*-------MENU---------*/
+.imgBudda {
+  position: absolute;
+  left: 50px;
+  top: 40vh;
+  width: 55px;
+  cursor: pointer;
+}
+.imgBuddaTop {
+  position: absolute;
+  left: 120px;
+  top: 2vh;
+  width: 55px;
+  cursor: pointer;
+  display: none; 
+}
+.listHead li{
+  vertical-align: center;
+  padding: 8px 0;
+}
+.listHead li p{
+  display: inline-block;
+  margin: 0;
+}
+.themes i{
+  margin: 0 25px;
+}
+.facebook i, .import i, .notifications i, .notifications i, .share i{
+  visibility: hidden;
+  margin: 0 25px;
+}
+.facebook:hover i, .import:hover i,.notifications:hover i, .share:hover i{
+  visibility: visible;
+} 
 .menuThemes{
   position: absolute;
   top: 12vh;
   left: -30vw;
-  width: 12vw;
   height: 5vh;
-  border-radius: 5px;
   background-color: #F7F1F0;
   color: grey;
   text-align: center;
   transition-duration: 0.1s; 
 }
-.menuThemes.show{
-  left: 1.5vw;
-}
 .menuThemes ul {
-  padding: 0;
-  margin: 2px;
-  line-height: 40px; }
-
+  padding: 5px 0 0 2px;
+  margin: 0px ;
+  line-height: 30px; 
+}
 .menuThemes ul li {
   list-style-type: none;
   background-color: #F4F3F4; 
   cursor: pointer;
 }
 .menuThemes ul li:nth-of-type(odd) {
-  background-color: white; }
-
-.imgBudda {
-  position: absolute;
-  left: 2vw;
-  top: 40vh;
-  width: 55px;
-  cursor: pointer; }
-
-.imgBuddaTop {
-  position: absolute;
-  left: 7.5vw;
-  top: 2vh;
-  width: 55px;
-  cursor: pointer;
-  display: none; 
+  background-color: white; 
+}
+.menuThemes ul li:last-child{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.menuThemes ul li:first-child, .menuThemes.show{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.menuThemes.show{
+  left: 1.5vw;
+  width: 220px;
+}
+.listHead{
+  width: 220px;
 }
 .facebook, .import, .notifications, .share{
-  display: block;
+    display: block;
+}
+/*--------Liste Theme----------*/
+
+.closeList{
+  display: none;
 }
 .choixTheme{
-  width: 11.7vw;
-  height: 15vh;
+  width: 220px;
   background-color: grey;
   color: white;
   line-height: 20px;
   text-align: left;
   padding: 20px;
   font-size: 12px;
+  display: none;
+}
+.choixTheme.openList{
+  display: block;
 }
 .colorlist{
  display: flex;
@@ -200,13 +236,137 @@ button {
 .colorlist div{
   width: 15px;
   height: 15px;
-  border: 1px solid black;
+  border: 1.5px solid black;
   border-radius: 50px;
-  margin-right: 5px;
+  margin-right: 15px;
+  margin-bottom: 8px;
   cursor: pointer;
 }
-aside{
-  height: 100vh;
-  width: 200px;
+/*------facebookAPI------*/
+.facebookAPI{
+  width: 220px;
+  background-color: grey;
+  color: white;
+  line-height: 20px;
+  text-align: left;
+  padding: 20px;
+  font-size: 11.5px;
+  text-align: justify;
+  display: none;
 }
+.facebookAPI.show{
+  display: block;
+}
+.facebookAPI p{
+  margin-bottom: 8px;
+}
+.facebookAPI form{
+  display: flex;
+  flex-direction: column;
+}
+.facebookAPI form button{
+  align-self: center;
+  height: 25px;
+  width: 50px;
+  margin-top: 8px;
+  font-size: 10px;
+  border: none;
+  box-shadow: 0px 3px #8A8685;
+  margin-bottom: 10px;
+}
+
+.facebookAPI form input{
+  width: 180px;
+  height: 25px;
+  margin-bottom: 7px;
+  border-radius: 4px;
+}
+/*-------Import----------*/
+.importSelect{
+  width: 220px;
+  background-color: grey;
+  color: white;
+  line-height: 20px;
+  text-align: left;
+  padding: 20px;
+  font-size: 11.5px;
+  text-align: justify;
+  display: none;
+}
+.importSelect.show{
+  display: block;
+}
+.importSelect button{
+  height: 25px;
+  width: 70px;
+  font-size: 10px;
+  border-radius: 4px;
+  margin: 0 55px 8px;
+  border: none;
+}
+.importSelect p{
+  margin-bottom: 10px;
+}
+/*-------Notification----------*/
+.notifSelect{
+  width: 220px;
+  background-color: grey;
+  color: white;
+  line-height: 20px;
+  text-align: left;
+  padding: 20px;
+  font-size: 11.5px;
+  text-align: justify;
+  display: none;
+}
+.notifSelect.show{
+  display: block;
+}
+.notifSelect button{
+  height: 25px;
+  width: 70px;
+  font-size: 10px;
+  border-radius: 4px;
+  margin: 0 55px 8px;
+  border: none;
+}
+.notifSelect p{
+  margin-bottom: 10px;
+}
+/*-------Share----------*/
+.shareSelect{
+  width: 220px;
+  background-color: grey;
+  color: white;
+  line-height: 20px;
+  text-align: left;
+  padding: 20px;
+  font-size: 11.5px;
+  text-align: justify;
+  display: none;
+}
+.shareSelect.show{
+  display: block;
+}
+.shareSelect button{
+  height: 25px;
+  width: 70px;
+  font-size: 10px;
+  border-radius: 4px;
+  margin: 0 55px 8px;
+  border: none;
+}
+.shareSelect p{
+  margin-bottom: 10px;
+}
+.facebookAPI, .choixTheme, .importSelect, .notifSelect, .shareSelect{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* 
+.leftmenu{
+  height: 100vh;
+  width: 300px;
+  background-color: #1E8F18;
+} */
 /*-------------------------------*/
