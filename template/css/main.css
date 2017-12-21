@@ -22,7 +22,10 @@
   background-color: url;
   color: grey; }
 
-.block {
+.blockD,
+.blockW,
+.blockM,
+.blockA {
   width: 8vh;
   height: 8vh;
   border-radius: 5%;
