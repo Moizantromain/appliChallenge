@@ -64,9 +64,9 @@ $(document).ready(function(){
 
 
 
-  $("#AA1").click(function () {
+  $("#AA1").click(function (event) {
     $('#More').css("display", "block");
-
+    event.preventDefault();
 
   });
   //------------------------------------------------------
@@ -76,15 +76,10 @@ $(document).ready(function(){
     A3Ok = 1;
     event.preventDefault();
     var time = $.now();
-    if (dailyOk == 1 && A3Ok == 1){
-       
-      $('#Daily div:last-child').before($('<div>').addClass('block'));
-      $('div.block').append('<img id="page-'+time+'">');
-        var id = $('#page-' + time);
-        id.attr('src', $('#Logo').attr('src')); 
-
-      
-
+    if (dailyOk == 1 && A3Ok == 1){ 
+      $('#Daily div:last-child').before($('<div>').addClass('block').append('<img id="page-'+time+'">'));
+      var id = $('#page-' + time);
+      id.attr('src', $('#Logo').attr('src')); 
       $('.site').hide();
       reviensContainer();
       dailyOk = 0;
