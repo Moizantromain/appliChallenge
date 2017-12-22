@@ -58,6 +58,51 @@ body{
 	background: $color-white;
 	font-family: 'Arial', sans serif;
 }
+
+/*-------MENU---------*/
+.menuThemes{
+	display: none;
+}
+.menuThemes.show{
+	position: absolute;
+	top: 80px;
+	left : 50px;
+	width: 230px;
+	height: 350px;
+	border-radius: 5px;
+	background-color: $color-white;
+	color: $color-texte-gradient;
+	text-align: center;
+	display: block;
+}
+.menuThemes ul{
+	padding: 0;
+	margin: 2px;
+	line-height: 40px;
+}
+.menuThemes ul li{
+	list-style-type: none;
+	background-color: #F4F3F4;
+
+}
+.menuThemes ul li:nth-of-type(odd){
+	background-color: white;
+}
+.imgBudda{
+	position: absolute;
+	left: 2vw;
+	top: 40vh;
+	width: 55px;
+	cursor: pointer;
+}
+.imgBuddaTop{
+	position: absolute;
+	left: 7.5vw;
+	top: 2vh;
+	width: 55px;
+	cursor: pointer;
+}
+/*-------------------------------*/
 ul{
 	list-style-type: none;
 }
