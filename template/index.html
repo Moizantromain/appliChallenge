@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
     <div class="site">
         <h2>Add a Site</h2>
         <div class="site2">
@@ -31,6 +32,26 @@
             </div>
             <div class="input">
                 <input type="text">
+    <div id="Buddabtn" class="imgBudda">
+        <img src="img/budda.png" alt="">
+    </div>
+    <div class="site" style="display:none">
+        <h2>Add a Site</h2>
+        <div class="site2">
+            <div class="siteImg">
+                <img id="Logo" src="" alt="">
+            </div>
+            <div class="btn">
+                <a id="AA1" class="A1" href="#">More images</a>
+                <div id="More">
+                    <ul id="Imgli">
+                        <li id="imgli"></li>
+                    </ul>
+                </div>
+                <a class="A2" href="">Set URL</a>
+            </div>
+            <div class="input">
+                <input id="quoi" type="text" name="quoi" onchange="recherche(quoi)">
                 <input type="text">
             </div>
             <div class="subA3">
@@ -38,6 +59,7 @@
             </div>
         </div>
     </div>
+
     <aside class="leftmenu">
         <div id="Buddabtn" class="imgBudda">
             <img src="img/budda.png" alt="">
@@ -88,45 +110,43 @@
     </aside>
     <!-- Container avec les images des sites selectionnés -->
     <section id="Container" class="container">
-        <div id="Table">
-            <table>
-                <tr id="Daily" class="daily">
-                    <td>
-                        <p>Daily</p>
-                        <i class="fa fa-trash-o" aria-hidden="true"></i>
-                        <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </td>
-                    <td>
-                        <button id="Btn-Daily">
-                            <a href="">+</a>
-                        </button>
-                    </td>
-                </tr>
-                <tr id="Weekly" class="weekly">
-                    <td>
-                        <p>Weekly</p>
-                        <i class="fa fa-trash-o" aria-hidden="true"></i>
-                        <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </td>
-                    <td>
-                        <button id="Btn-Weekly">
-                            <a href="">+</a>
-                        </button>
-                    </td>
-                </tr>
-                <tr id="Monthly" class="monthly">
-                    <td>
-                        <p>Monthly</p>
-                        <i class="fa fa-trash-o" aria-hidden="true"></i>
-                        <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </td>
-                    <td>
-                        <button id="Btn-Monthly">
-                            <a href="">+</a>
-                        </button>
-                    </td>
-                </tr>
-            </table>
+        <ul id="Table">
+            <li id="Daily" class="daily">
+                <div>
+                    <p>Daily</p>
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <button id="Btn-Daily">
+                        <a href="">+</a>
+                    </button>
+                </div>
+            </li>
+            <li id="Weekly" class="weekly">
+                <div>
+                    <p>Weekly</p>
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <button id="Btn-Weekly">
+                        <a href="">+</a>
+                    </button>
+                </div>
+            </li>
+            <li id="Monthly" class="monthly">
+                <div>
+                    <p>Monthly</p>
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <button id="Btn-Monthly">
+                        <a href="">+</a>
+                    </button>
+                </div>
+            </li>
         </div>
     </section>
     <!-- Section du bas avec la quatrième liste de sites selectionnés-->
@@ -134,12 +154,20 @@
         <table>
             <tr id="Bottom" class="bottom">
                 <td>
+        <ul>
+            <li id="Bottom" class="bottom">
+                <div class="btn-footer">
+                    <div class="btn-i">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+
                     <button id="Btn-All">
                         <a href="">+</a>
                     </button>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </li>
+        </ul>
     </section>
 
     <!--[if lte IE 9]>
@@ -156,8 +184,8 @@
     </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/fonction.js"></script>
     <script src="js/api_facebook.js"></script>
+    <script src="js/fonction.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

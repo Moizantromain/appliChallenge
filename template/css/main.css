@@ -22,9 +22,43 @@
   background-color: url;
   color: grey; }
 
+.blockD,
+.blockW,
+.blockM,
+.blockA {
+  width: 8vh;
+  height: 8vh;
+  border-radius: 5%;
+  background-color: pink;
+  font-size: 30px;
+  font-weight: 200;
+  display: inline-block;
+  margin-right: 1vw;
+  margin-top: 3vh;
+  padding-bottom: 0; }
+
 body {
   background: #F7F1F0;
   font-family: 'Arial', sans serif; }
+
+ul {
+  list-style-type: none; }
+
+#More {
+  width: 500px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  position: absolute;
+  top: -51px;
+  left: 123px; }
+
+#Imgli {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  list-style-type: none;
+  padding: 0; }
 
 .site {
   width: 16vw;
@@ -105,6 +139,7 @@ h2 {
   width: 100vw;
   height: 85vh;
   position: relative;
+
   left: 0;
   transition-duration: 0.5s; 
 }
@@ -113,10 +148,29 @@ h2 {
   left: 10vw;
 }
 #Daily td {
-  padding-top: 20vh; }
+  z-index: 1; }
+  #Container div {
+    display: inline-block;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 5%;
+    vertical-align: bottom;
+    margin-top: 3vh;
+    margin-right: 2vw; }
 
-#Weekly td, #Monthly td {
-  padding-top: 10vh; }
+#Table {
+
+  padding-top: 20vh; }
+  #Table i {
+    visibility: hidden; }
+  #Table p {
+    margin-top: 2vh; }
+
+#Daily div:first-child:hover i, #Weekly div:first-child:hover i, #Monthly div:first-child:hover i {
+  visibility: visible; }
+
+#Daily div:first-child:hover p, #Weekly div:first-child:hover p, #Monthly div:first-child:hover p {
+  margin-top: 0; }
 
 button {
   width: 8vh;
@@ -124,21 +178,29 @@ button {
   border-radius: 5%;
   background-color: #B6B0AF;
   font-size: 30px;
-  font-weight: 200; }
+  font-weight: 200;
+  vertical-align: bottom; }
 
 #Footer {
   width: 100vw;
   height: 15vh;
   background-color: #B6B0AF; }
+  #Footer div {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 3vh; }
 
-#Footer td:first-child {
-  padding-top: 3vh;
-  padding-left: 5vh; }
+div.btn-i i {
+  display: none; }
+
+div.btn-footer:hover i {
+  display: block; }
 
 #Footer button {
   background-color: #8A8685; }
 
 /*-------MENU---------*/
+
 .imgBudda {
   position: absolute;
   left: 50px;
@@ -375,3 +437,46 @@ button {
   border-bottom-right-radius: 5px;
 }
 /*-------------------------------*/
+.menuThemes {
+  display: none; }
+
+.menuThemes.show {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  width: 230px;
+  height: 350px;
+  border-radius: 5px;
+  background-color: #F7F1F0;
+  color: grey;
+  text-align: center;
+  display: block; }
+
+.menuThemes ul {
+  padding: 0;
+  margin: 2px;
+  line-height: 40px; }
+
+.menuThemes ul li {
+  list-style-type: none;
+  background-color: #F4F3F4; }
+
+.menuThemes ul li:nth-of-type(odd) {
+  background-color: white; }
+
+.imgBudda {
+  position: absolute;
+  left: 2vw;
+  top: 40vh;
+  width: 55px;
+  cursor: pointer; }
+
+.imgBuddaTop {
+  position: absolute;
+  left: 7.5vw;
+  top: 2vh;
+  width: 55px;
+  cursor: pointer; }
+
+/*-------------------------------*/
+
